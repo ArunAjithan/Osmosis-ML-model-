@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Network Anomaly Detection</title>
+    <link   rel  ="stylesheet"       href ="{%static 'bootstrap/bootstrap.min.css' %}">
+    <link   rel  ="stylesheet"       href ="{% static 'css/styles.css' %}">
+    <script type ="text/javascript"  src  ="{% static 'jquery/jquery.js' %}"></script>
+</head>
+<body background="{% static 'images/Machine_Learn_6.jpg' %}" style ="background-size:cover;" >
+    <div style="background-color:RGB(233, 150, 122, 0.77)" class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Network Anomaly Detection</h1>
+            <p class="lead">The purpose of this engine is to detect anomalies by studying the real time network connection vector.</p>
+            <hr class="my-4">
+            <p>The engine can also predict the network anomaly based on user input.</p>
+            <form>
+                <div class="d-flex justify-content-between">
+                    <button id="upload" class="btn btn-primary btn-lg" type="button">Upload</button>
+                    <button id="train" class="btn btn-primary btn-lg" type="button">Training</button>
+                    <button id="predict" class="btn btn-primary btn-lg" type="button">Predict</button>
+                </div>
+            </form>
+            <br>
+        </div>
+    </div>
+</body>
+</html>
+
+<script type ="text/javascript"  src  ="{% static 'jquery_ajax/predict_result.js' %}"></script>

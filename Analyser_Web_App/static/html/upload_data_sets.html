@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Data Sets</title>
+    <link   rel  ="stylesheet"       href ="{%static 'bootstrap/bootstrap.min.css' %}">
+    <link   rel  ="stylesheet"       href ="{% static 'css/styles.css' %}">
+    <script type ="text/javascript"  src  ="{% static 'jquery/jquery.js' %}"></script>
+</head>
+<body background="{% static 'images/Data_Science_4_1.jpg' %}" style ="background-size:cover;" >
+    <div style="background-color:RGB(233, 150, 122, 0.77)" class="jumbotron jumbotron-fluid">
+        <center><h1 class="display-4">Upload Data Sets</h1></center>
+        <br>
+        <br>
+        <form>
+            <div class="d-flex justify-content-center">
+                <button id="train" class="btn btn-primary btn-lg" type="button">Training Data</button>
+            </div>
+        </form>
+        <br><br>
+        <form>
+            <div class="d-flex justify-content-center">
+                <button id="test" class="btn btn-primary btn-lg" type="button">Testing  Data</button>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>
+<script type ="text/javascript"  src  ="{% static 'jquery_ajax/upload_data_sets.js' %}"></script>

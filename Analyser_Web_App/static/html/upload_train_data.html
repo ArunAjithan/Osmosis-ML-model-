@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Training Data</title>
+    <link   rel  ="stylesheet"       href ="{%static 'bootstrap/bootstrap.min.css' %}">
+    <link   rel  ="stylesheet"       href ="{% static 'css/styles.css' %}">
+    <script type ="text/javascript"  src  ="{% static 'jquery/jquery.js' %}"></script>
+</head>
+<body background="{% static 'images/Data_Science_4_1.jpg' %}" style ="background-size:cover;" >
+    <div style="background-color:RGB(233, 150, 122, 0.77)" class="jumbotron jumbotron-fluid">
+        <center><h1 class="display-4">Training Data Set</h1></center>
+        <br>
+        <br>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="d-flex justify-content-around">
+                <center><input type="file" class="form-control-file" name="train_data" aria-describedby="fileHelp"></center>
+                <button id="train" class="btn btn-primary btn-lg" type="submit">Training Data</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
