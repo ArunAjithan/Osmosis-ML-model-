@@ -1,0 +1,7 @@
+FROM python:3
+ADD Network_Anomaly_Detection.py /
+ADD ntwrk_trail.csv /
+RUN pip install pystrich \
+&& pip3 install pandas \
+&& pip install sklearn
+CMD [ "python", "Network_Anomaly_Detection.py","ntwrk_trail.csv" ]
